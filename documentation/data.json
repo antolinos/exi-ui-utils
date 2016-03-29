@@ -1,0 +1,243 @@
+{
+    "project": {
+        "name": "exi-ui-utils",
+        "description": "Generic classes and utils methods for EXI related projects",
+        "version": "1.0.0",
+        "url": "https://github.com/ispyb/exi-ui-utils"
+    },
+    "files": {
+        "js/bui.js": {
+            "name": "js/bui.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/dygraphwidget.js": {
+            "name": "js/dygraphwidget.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/string.js": {
+            "name": "js/string.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [
+        {
+            "file": "js/bui.js",
+            "line": 37,
+            "description": "Groups an array based on a function\nExample:\n\t\tdata =  this.groupBy(data, function(item){\n\t\t\treturn [item.bufferAcronym];\n\t\t});",
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 213,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 252,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 260,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 273,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 324,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 329,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 334,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 424,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 461,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 568,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 686,
+            "class": ""
+        },
+        {
+            "file": "js/bui.js",
+            "line": 731,
+            "class": ""
+        },
+        {
+            "file": "js/dygraphwidget.js",
+            "line": 2,
+            "description": "Using dygraph it plots a chart. Params: targetId, labelsContainerId, args",
+            "width": "",
+            "height": "",
+            "labelswidth": "",
+            "targetid": "",
+            "custombars": "",
+            "ylabel": "",
+            "xlabel": "",
+            "showrangeselector": "Show or hide the range selector widget.",
+            "class": ""
+        },
+        {
+            "file": "js/dygraphwidget.js",
+            "line": 79,
+            "description": "data: dygraphs.com/data.html",
+            "class": ""
+        },
+        {
+            "file": "js/dygraphwidget.js",
+            "line": 90,
+            "class": ""
+        },
+        {
+            "file": "js/dygraphwidget.js",
+            "line": 95,
+            "class": ""
+        },
+        {
+            "file": "js/string.js",
+            "line": 1,
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: width",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "unknown tag: height",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "unknown tag: labelswidth",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "unknown tag: targetid",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "unknown tag: custombars",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "unknown tag: ylabel",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "unknown tag: xlabel",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "unknown tag: showrangeselector",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "Missing item type\nGroups an array based on a function\nExample:\n\t\tdata =  this.groupBy(data, function(item){\n\t\t\treturn [item.bufferAcronym];\n\t\t});",
+            "line": " js/bui.js:37"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:213"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:252"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:260"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:273"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:324"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:329"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:334"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:424"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:461"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:568"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:686"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/bui.js:731"
+        },
+        {
+            "message": "Missing item type\nUsing dygraph it plots a chart. Params: targetId, labelsContainerId, args",
+            "line": " js/dygraphwidget.js:2"
+        },
+        {
+            "message": "Missing item type\ndata: dygraphs.com/data.html",
+            "line": " js/dygraphwidget.js:79"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/dygraphwidget.js:90"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/dygraphwidget.js:95"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/string.js:1"
+        }
+    ]
+}
