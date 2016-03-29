@@ -1,7 +1,7 @@
 {
-  "name": "ispyb-js-api",
+  "name": "exi-ui-utils",
   "version": "0.1",
-  "homepage": "https://github.com/antolinos/ispyb-js-api",
+  "homepage": "https://github.com/ispyb/exi-ui-utils",
   "description": "ISPyB javascript API",
   "main": "index.html",
   "moduleType": [
@@ -15,7 +15,7 @@
     "SAXS"
   ],
   "authors": [
-    "Alejandro de Maria Antolinos"
+    "Alejandro de Maria"
   ],
   "license": "GPL3",
   "ignore": [
