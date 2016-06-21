@@ -978,16 +978,16 @@ var BIOSAXS_COMBOMANAGER = {
 		}
 
 		for ( var i = 0; i < sessions.length; i++) {
-			sessions[i]["startDateFormatted"] = moment(sessions[i].startDate).format("DD/MM/YYYY");
-			sessions[i]["sorter"] = moment(sessions[i].startDate).format("YYYYMMDD");
+			sessions[i]["startDateFormatted"] = moment(sessions[i].BLSession_startDate).format("DD/MM/YYYY");
+			sessions[i]["sorter"] = moment(sessions[i].BLSession_startDate).format("YYYYMMDD");
 		}
 
 		var store = Ext.create('Ext.data.Store', {
-			fields : [ 'sessionId', 'startDateFormatted', 'beamlineName', 'startDate', 'endDate', 'beamlineOperator' ],
+			fields : [ 'sessionId', 'startDateFormatted', 'beamLineName', 'BLSession_startDate', 'endDate', 'beamlineOperator' ],
 			data : sessions,
 			sorters : [ 'sorter' ]
 		});
-
+        
 		return Ext.create('Ext.form.ComboBox', {
 			fieldLabel : 'Session',
 			labelWidth : labelWidth,
@@ -1000,9 +1000,9 @@ var BIOSAXS_COMBOMANAGER = {
 			// Note the use of "x-boundlist-item" class,
 			// this is required to make the items selectable.
 			tpl : Ext.create('Ext.XTemplate', '<tpl for=".">',
-					'<div class="x-boundlist-item">{startDateFormatted}<span style="font-weight:bold"> {beamlineName}</span></div>', '</tpl>'),
+					'<div class="x-boundlist-item">{startDateFormatted}<span style="font-weight:bold"> {beamLineName}</span></div>', '</tpl>'),
 			// template for the content inside text field
-			displayTpl : Ext.create('Ext.XTemplate', '<tpl for=".">', '{startDateFormatted} {beamlineName}', '</tpl>')
+			displayTpl : Ext.create('Ext.XTemplate', '<tpl for=".">', '{startDateFormatted} {beamLineName}', '</tpl>')
 
 		});
 	},

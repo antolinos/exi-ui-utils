@@ -1059,16 +1059,16 @@ var BIOSAXS_COMBOMANAGER = {
 		}
 
 		for ( var i = 0; i &lt; sessions.length; i++) {
-			sessions[i][&quot;startDateFormatted&quot;] = moment(sessions[i].startDate).format(&quot;DD/MM/YYYY&quot;);
-			sessions[i][&quot;sorter&quot;] = moment(sessions[i].startDate).format(&quot;YYYYMMDD&quot;);
+			sessions[i][&quot;startDateFormatted&quot;] = moment(sessions[i].BLSession_startDate).format(&quot;DD/MM/YYYY&quot;);
+			sessions[i][&quot;sorter&quot;] = moment(sessions[i].BLSession_startDate).format(&quot;YYYYMMDD&quot;);
 		}
 
 		var store = Ext.create(&#x27;Ext.data.Store&#x27;, {
-			fields : [ &#x27;sessionId&#x27;, &#x27;startDateFormatted&#x27;, &#x27;beamlineName&#x27;, &#x27;startDate&#x27;, &#x27;endDate&#x27;, &#x27;beamlineOperator&#x27; ],
+			fields : [ &#x27;sessionId&#x27;, &#x27;startDateFormatted&#x27;, &#x27;beamLineName&#x27;, &#x27;BLSession_startDate&#x27;, &#x27;endDate&#x27;, &#x27;beamlineOperator&#x27; ],
 			data : sessions,
 			sorters : [ &#x27;sorter&#x27; ]
 		});
-
+        
 		return Ext.create(&#x27;Ext.form.ComboBox&#x27;, {
 			fieldLabel : &#x27;Session&#x27;,
 			labelWidth : labelWidth,
@@ -1081,9 +1081,9 @@ var BIOSAXS_COMBOMANAGER = {
 			// Note the use of &quot;x-boundlist-item&quot; class,
 			// this is required to make the items selectable.
 			tpl : Ext.create(&#x27;Ext.XTemplate&#x27;, &#x27;&lt;tpl for=&quot;.&quot;&gt;&#x27;,
-					&#x27;&lt;div class=&quot;x-boundlist-item&quot;&gt;{startDateFormatted}&lt;span style=&quot;font-weight:bold&quot;&gt; {beamlineName}&lt;/span&gt;&lt;/div&gt;&#x27;, &#x27;&lt;/tpl&gt;&#x27;),
+					&#x27;&lt;div class=&quot;x-boundlist-item&quot;&gt;{startDateFormatted}&lt;span style=&quot;font-weight:bold&quot;&gt; {beamLineName}&lt;/span&gt;&lt;/div&gt;&#x27;, &#x27;&lt;/tpl&gt;&#x27;),
 			// template for the content inside text field
-			displayTpl : Ext.create(&#x27;Ext.XTemplate&#x27;, &#x27;&lt;tpl for=&quot;.&quot;&gt;&#x27;, &#x27;{startDateFormatted} {beamlineName}&#x27;, &#x27;&lt;/tpl&gt;&#x27;)
+			displayTpl : Ext.create(&#x27;Ext.XTemplate&#x27;, &#x27;&lt;tpl for=&quot;.&quot;&gt;&#x27;, &#x27;{startDateFormatted} {beamLineName}&#x27;, &#x27;&lt;/tpl&gt;&#x27;)
 
 		});
 	},

@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 	  concat : {
 		  prod:{
 			  files : {
-				  'min/exi-ui-utils.min.js' 		: ["js/**/*.js"]
+				  'min/exi-ui-utils.min.js' 		: ["js/**/*.js", "js/*.js"]
 			  }
 		  }
 	  },
